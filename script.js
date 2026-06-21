@@ -1,3 +1,48 @@
+
+let isAr = false;
+
+// ===== TYPING ANIMATION =====
+const typingWords = {
+  en: ['Full Stack Developer'],
+  ar: ['مطور فول ستاك']
+};
+
+let typingIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingTimeout;
+
+function typeEffect() {
+  const lang = isAr ? 'ar' : 'en';
+  const words = typingWords[lang];
+  const word = words[typingIndex % words.length];
+  const el = document.getElementById('typed-text');
+  if (!el) return;
+
+  if (!isDeleting) {
+    el.textContent = word.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === word.length) {
+      isDeleting = true;
+      typingTimeout = setTimeout(typeEffect, 1800);
+      return;
+    }
+  } else {
+    el.textContent = word.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      typingIndex++;
+      typingTimeout = setTimeout(typeEffect, 300);
+      return;
+    }
+  }
+  typingTimeout = setTimeout(typeEffect, isDeleting ? 60 : 90);
+}
+
+clearTimeout(typingTimeout);
+typeEffect();
+
 const skills = [
   {name:'React JS',nameAr:'React JS',icon:'ti-brand-react',cat:'frontend'},
   {name:'JavaScript',nameAr:'JavaScript',icon:'ti-brand-javascript',cat:'frontend'},
@@ -45,11 +90,9 @@ const navTranslations = {
 
 // ترجمات الـ H1 يدوياً
 const h1Translations = {
-  en: 'Hi, I\'m<br><span>Youssef Essam</span>',
-  ar: 'مرحباً، أنا<br><span>يوسف عصام</span>'
+  en: 'Youssef Essam',
+  ar: 'يوسف عصام'
 };
-
-let isAr = false;
 
 function toggleLang() {
   isAr = !isAr;
@@ -86,13 +129,16 @@ function toggleLang() {
 
   // skill badges
   document.querySelectorAll('.skill-badge').forEach(b => {
-    const span = b.querySelector('span');
-    if (span) span.textContent = isAr ? b.dataset.ar : b.dataset.en;
+    b.querySelector('span').textContent = isAr ? b.dataset.ar : b.dataset.en;
   });
 
   // زرار اللغة
   buildProjects();
   track.classList.toggle('ar', isAr);
+  // restart typing in new lang
+  clearTimeout(typingTimeout);
+  typingIndex = 0; charIndex = 0; isDeleting = false;
+  typeEffect();
   thumb.textContent = isAr ? 'AR' : 'EN';
 
   // ripple
@@ -120,7 +166,7 @@ const projectsData = [
     titleEn: 'Media Magic', titleAr: 'ميديا ماجيك',
     descEn: 'Professional services website featuring clean design, responsive layout, and optimized user experience.',
     descAr: 'موقع خدمات احترافي بتصميم نظيف وتخطيط متجاوب وتجربة مستخدم محسّنة.',
-    techs: ['React JS', 'Laravel', 'PHP', 'MySQL'],
+    techs: ['React JS', 'Laravel', 'MySQL'],
     link: '#'
   },
   {
