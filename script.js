@@ -178,7 +178,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'imgs/repline.jpeg',
+    img: 'imgs/rep.jpeg',
     tagEn: 'Application', tagAr: 'تطبيق',
     titleEn: 'Repline', titleAr: 'ريبلاين',
     descEn: 'Mobile application with modern UI for managing daily tasks and workflow efficiently.',
@@ -196,7 +196,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'imgs/auto_Aid.jpeg',
+    img: 'imgs/auto.jpeg',
     tagEn: 'Application', tagAr: 'تطبيق',
     titleEn: 'Auto Aid', titleAr: 'أوتو إيد',
     descEn: '"Auto Aid" is a mobile application primarily designed to help car owners manage and schedule car maintenance activities.',
