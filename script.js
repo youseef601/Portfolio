@@ -151,7 +151,7 @@ function toggleLang() {
 
 const projectsData = [
   {
-    img: 'C:/Users/Infotech/OneDrive/Desktop/imgs/nepri.png',
+    img: 'imgs/nepri.png',
     tagEn: 'Website', tagAr: 'موقع إلكتروني',
     titleEn: 'Nepri for IQF Fruits & Vegetables', titleAr: 'نيبري للفواكه والخضروات المجمدة',
     descEn: 'Professional product showcase website for Nepri frozen foods. Fully responsive with smooth navigation.',
@@ -160,7 +160,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'C:/Users/Infotech/OneDrive/Desktop/imgs/media.png',
+    img: 'imgs/media.png',
     tagEn: 'Website', tagAr: 'موقع إلكتروني',
     titleEn: 'Media Magic', titleAr: 'ميديا ماجيك',
     descEn: 'Professional services website featuring clean design, responsive layout, and optimized user experience.',
@@ -169,7 +169,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'C:/Users/Infotech/OneDrive/Desktop/imgs/football-tatics.png',
+    img: 'imgs/football-tatics.png',
     tagEn: 'E-commerce', tagAr: 'تجارة إلكترونية',
     titleEn: 'Football Tactics', titleAr: 'فوتبول تاكتيكس',
     descEn: 'Full e-commerce platform for selling sports products online with secure payment gateways.',
@@ -178,7 +178,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'C:/Users/Infotech/OneDrive/Desktop/imgs/Repline.jpeg',
+    img: 'imgs/Repline.jpeg',
     tagEn: 'Application', tagAr: 'تطبيق',
     titleEn: 'Repline', titleAr: 'ريبلاين',
     descEn: 'Mobile application with modern UI for managing daily tasks and workflow efficiently.',
@@ -187,7 +187,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'C:/Users/Infotech/OneDrive/Desktop/imgs/travel.png',
+    img: 'imgs/travel.png',
     tagEn: 'Website', tagAr: 'موقع إلكتروني',
     titleEn: 'Travel.com', titleAr: 'تريفل كوم',
     descEn: 'Flight and travel booking platform with real-time search, hotel listings, and vacation packages.',
@@ -196,7 +196,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'C:/Users/Infotech/OneDrive/Desktop/imgs/Auto_Aid.jpeg',
+    img: 'imgs/Auto_Aid.jpeg',
     tagEn: 'Application', tagAr: 'تطبيق',
     titleEn: 'Auto Aid', titleAr: 'أوتو إيد',
     descEn: '"Auto Aid" is a mobile application primarily designed to help car owners manage and schedule car maintenance activities.',
