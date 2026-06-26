@@ -151,25 +151,25 @@ function toggleLang() {
 
 const projectsData = [
   {
-    img: 'imgs/nepri.jpeg',
+    img: 'Portfolio/imgs/nepri.jpeg',
     tagEn: 'Website', tagAr: 'موقع إلكتروني',
     titleEn: 'Nepri for IQF Fruits & Vegetables', titleAr: 'نيبري للفواكه والخضروات المجمدة',
     descEn: 'Professional product showcase website for Nepri frozen foods. Fully responsive with smooth navigation.',
     descAr: 'موقع احترافي لعرض منتجات نيبري للأغذية المجمدة. متجاوب بالكامل مع تنقل سلس.',
     techs: ['HTML', 'CSS', 'JavaScript', 'PHP'],
-    link: '#'
+    link: 'https://nepri.site.je/index.php',
   },
   {
-    img: 'imgs/media.jpeg',
+    img: 'Portfolio/imgs/media.jpeg',
     tagEn: 'Website', tagAr: 'موقع إلكتروني',
     titleEn: 'Media Magic', titleAr: 'ميديا ماجيك',
     descEn: 'Professional services website featuring clean design, responsive layout, and optimized user experience.',
     descAr: 'موقع خدمات احترافي بتصميم نظيف وتخطيط متجاوب وتجربة مستخدم محسّنة.',
     techs: ['HTML', 'CSS', 'JavaScript','React JS','Tailwind'],
-    link: '#'
+    link: 'https://youseef601.github.io/media-magic/'
   },
   {
-    img: 'imgs/football-tatics.jpeg',
+    img: 'Portfolio/imgs/football-tatics.jpeg',
     tagEn: 'E-commerce', tagAr: 'تجارة إلكترونية',
     titleEn: 'Football Tactics', titleAr: 'فوتبول تاكتيكس',
     descEn: 'Full e-commerce platform for selling sports products online with secure payment gateways.',
@@ -178,16 +178,16 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'imgs/rep.jpeg',
+    img: 'Portfolio/imgs/rep.jpeg',
     tagEn: 'Application', tagAr: 'تطبيق',
     titleEn: 'Repline', titleAr: 'ريبلاين',
     descEn: 'Mobile application with modern UI for managing daily tasks and workflow efficiently.',
     descAr: 'تطبيق موبايل بواجهة حديثة لإدارة المهام اليومية وسير العمل بكفاءة.',
     techs: ['Laravel', 'PHP', 'JavaScript','React Native'],
-    link: '#'
+    link: 'https://repline.pro/'
   },
   {
-    img: 'imgs/travel.jpeg',
+    img: 'Portfolio/imgs/travel.jpeg',
     tagEn: 'Website', tagAr: 'موقع إلكتروني',
     titleEn: 'Travel.com', titleAr: 'تريفل كوم',
     descEn: 'Flight and travel booking platform with real-time search, hotel listings, and vacation packages.',
@@ -196,7 +196,7 @@ const projectsData = [
     link: '#'
   },
   {
-    img: 'imgs/auto.jpeg',
+    img: 'Portfolio/imgs/auto.jpeg',
     tagEn: 'Application', tagAr: 'تطبيق',
     titleEn: 'Auto Aid', titleAr: 'أوتو إيد',
     descEn: '"Auto Aid" is a mobile application primarily designed to help car owners manage and schedule car maintenance activities.',
@@ -220,7 +220,7 @@ function buildProjects() {
       <div class="project-img-wrap">
         <img class="project-img" src="${p.img}" alt="${p['title' + (lang === 'ar' ? 'Ar' : 'En')]}" loading="lazy"/>
         <div class="project-overlay">
-          <a href="${p.link}" class="overlay-btn">
+          <a href="${p.link}" target="_blank" class="overlay-btn">
             <i class="ti ti-eye" aria-hidden="true"></i> ${lang === 'ar' ? 'عرض' : 'Preview'}
           </a>
         </div>
